@@ -27,32 +27,18 @@
             android:id="@+id/tshirt_red"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Red T-Shirt"/>
+            android:text="Red"/>
         <CheckBox
             android:id="@+id/tshirt_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Blue T-Shirt"/>
+            android:text="Blue"/>
         <CheckBox
             android:id="@+id/tshirt_green"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Green T-Shirt"/>
+            android:text="Green"/>
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Size: "
-        android:textSize="20sp"
-        android:textStyle="bold"
-        />
-
-    <Spinner
-        android:id="@+id/sizeSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/tshirt_sizes"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,27 +56,32 @@
         >
         <Button
             android:id="@+id/decrement"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="-"
-            android:textSize="20sp"
-            android:backgroundTint="#FF5722"
-            />
+            android:textSize="24sp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/quantityTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize="20sp"
-            android:layout_marginHorizontal="15dp"
-            />
+            android:textSize="24sp"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
         <Button
             android:id="@+id/increment"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="+"
-            android:backgroundTint="#FF5722"
+            android:textSize="24sp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:textColor="@android:color/white"/>
             />
     </LinearLayout>
 
